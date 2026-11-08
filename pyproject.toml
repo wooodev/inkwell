@@ -27,3 +27,7 @@ select = ["E", "F", "W", "I", "B", "UP", "DJ"]
 
 [tool.ruff.format]
 quote-style = "double"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["test_*.py"]
